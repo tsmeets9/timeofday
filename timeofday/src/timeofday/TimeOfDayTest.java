@@ -12,9 +12,9 @@ class TimeOfDayTest {
 		assert TimeOfDay.getHours(myTimeOfDay) == 0;
 		assert TimeOfDay.getMinutes(myTimeOfDay) == 0;
 		TimeOfDay.setHours(myTimeOfDay, 12);
-		TimeOfDay.setMinutes(myTimeOfDay, 45);
+		TimeOfDay.setMinutes(myTimeOfDay, 47);
 		assert TimeOfDay.getHours(myTimeOfDay) == 12;
-		assert TimeOfDay.getMinutes(myTimeOfDay) == 45;
+		assert TimeOfDay.getMinutes(myTimeOfDay) == 47;
 	}
 
 }

@@ -9,12 +9,12 @@ class TimeOfDayTest {
 	@Test
 	void test() {
 		TimeOfDay myTimeOfDay = new TimeOfDay();
-		assert TimeOfDay.getHours(myTimeOfDay) == 0;
-		assert TimeOfDay.getMinutes(myTimeOfDay) == 0;
-		TimeOfDay.setHours(myTimeOfDay, 12);
-		TimeOfDay.setMinutes(myTimeOfDay, 47);
-		assert TimeOfDay.getHours(myTimeOfDay) == 12;
-		assert TimeOfDay.getMinutes(myTimeOfDay) == 47;
+		assert myTimeOfDay.getHours() == 0;
+		assert myTimeOfDay.getMinutes() == 0;
+		myTimeOfDay.setHours(12);
+		myTimeOfDay.setMinutes(47);
+		assert myTimeOfDay.getHours() == 12;
+		assert myTimeOfDay.getMinutes() == 47;
 	}
 
 }
